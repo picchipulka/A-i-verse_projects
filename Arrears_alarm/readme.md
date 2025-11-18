@@ -1,1 +1,0 @@
-Creating a handy reminder email for keeping track of bill payments. 
