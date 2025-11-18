@@ -1,2 +1,2 @@
 # A(i)verse_projects
-Averse projects documentation
+This repo contains the source codes and change logs of all the AI apps put in averse!!
