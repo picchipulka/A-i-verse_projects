@@ -1,2 +1,2 @@
-# A-i-verse_projects
+# A(i)verse_projects
 Averse projects documentation
