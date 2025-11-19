@@ -68,7 +68,7 @@
 
     const TAG_COLOR_MAP = {
       'Rent':        { bg: 'bg-blue-600/50',    text: 'text-blue-200' },
-      'Insurance':   { bg: 'bg-green-600/50',   text: 'text-green-200' },
+      'Insurance':   { bg: 'bg-green-400/50',   text: 'text-green-200' },
       'Mortgage':    { bg: 'bg-purple-600/50',  text: 'text-purple-200' },
       'Credit Card': { bg: 'bg-red-600/50',     text: 'text-red-200' },
       'Health Care': { bg: 'bg-pink-600/50',    text: 'text-pink-200' },
@@ -173,7 +173,7 @@
 
         if (option.daysBefore > 0) {
           reminders.push({
-            label: `Reminder 1 (${option.daysBefore} day${option.daysBefore > 1 ? 's' : ''} before)`,
+            label: `Initial Reminder`,
             date: subtractDaysFromDate(dueDate, option.daysBefore),
             type: 'advance'
           });
@@ -181,7 +181,7 @@
 
         if (reminderCadence !== 'dueonly' || option.daysBefore === 0) {
           reminders.push({
-            label: 'Reminder (Due Date)',
+            label: 'Final Reminder',
             date: dueDate,
             type: 'due'
           });
@@ -355,7 +355,7 @@
               A(I)VERSE: Arrears Alarm
             </h1>
             <p className="text-center text-indigo-300 mb-1">{displayName}'s Wallet</p>
-            <p className="text-center text-gray-400 text-sm mb-8">v1.2 - Smart Payment Tracking</p>
+            <p className="text-center text-gray-400 text-sm mb-8">v1.3 - Smart Payment Tracking</p>
 
             {error && (
               <div className="p-4 bg-red-900/30 border border-red-700 rounded-lg mb-4 flex justify-between items-center">
